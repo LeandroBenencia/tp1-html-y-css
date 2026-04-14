@@ -7,44 +7,49 @@
     <link rel="stylesheet" href="/Pagina principal/Assets/css/contacto.css">
 </head>
 <body>
-   
 
-    
-        <header>
+    <header>
         <nav>
-           
-         <ul>
-         <li><a class="boton-inicio" href="/Pagina principal/Home.html">Inicio</a></li>        
-         </ul>
+            <ul>
+                <li><a class="boton-inicio" href="/Pagina principal/Home.html">Inicio</a></li>
+            </ul>
         </nav>
     </header>
+
     <main>
         <div class="titulo">
             <h1>Contactanos</h1>
-             <p>Si tienes alguna pregunta o necesitas más información, no dudes en contactarnos.</p>
+            <p>Si tienes alguna pregunta o necesitas más información, no dudes en contactarnos.</p>
         </div>
-       
-    
- <form class="formulario" action="#" method="post">
-    <input type="email" placeholder="Correo electronico" required>
-    <input type="text" placeholder="Asunto" required>
-    <textarea placeholder="Escribe tu mensaje aquí" required></textarea>
 
-    <button type="button">Enviar</button>
+        <input type="checkbox" id="cerrar-modal" style="display:none">
 
-    <div class="spinner"></div>
-    <p class="mensaje">✔ Mensaje enviado</p>
-</form>
-   
-       
+        <form class="formulario" action="#" method="post">
+            <input type="email" placeholder="Correo electronico" required>
+            <input type="text" placeholder="Asunto" required>
+            <textarea placeholder="Escribe tu mensaje aquí" required></textarea>
+            <label for="cerrar-modal" class="button">Enviar</label>
+            <div class="spinner"></div>
+            <p class="mensaje">✔ Mensaje enviado</p>
+        </form>
+
+        <div class="modal">
+            <div class="modal-contenido">
+                <h2>¡Mensaje enviado!</h2>
+                <p>Nos pondremos en contacto contigo pronto.</p>
+                <label for="cerrar-modal">Cerrar</label>
+            </div>
+        </div>
+
     </main>
-        <footer>
-    <ul>
-        <li><a href="#">Suscribete</a></li>
-        <li><a href="/Pagina principal/pages/Contacto.html">Contacto</a></li>
-        <li><a href="https://maps.app.goo.gl/j1ZGdCBHEbtTEC1y9">Donde ubicarnos</a></li>
-    </ul>
-   
-</footer>
 
-    </body>
+    <footer>
+        <ul>
+            <li><a href="#">Suscribete</a></li>
+            <li><a href="/Pagina principal/pages/Contacto.html">Contacto</a></li>
+            <li><a href="https://maps.app.goo.gl/j1ZGdCBHEbtTEC1y9">Donde ubicarnos</a></li>
+        </ul>
+    </footer>
+
+</body>
+</html>
