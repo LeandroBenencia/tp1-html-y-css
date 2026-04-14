@@ -4,71 +4,163 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pagina principal</title>
+    <link rel="stylesheet" href="/Pagina principal/Assets/css/home.css">
 </head>
+
+
 <body>
-    <h1>Bienvenido a la página principal</h1>
-    <p>Esta es la página de inicio de nuestro sitio web.</p>
+    
     <header>
-        <nav>
+        <h1 class="titulo">Bienvenidos</h1>
+    <p>Esta es la página de inicio de nuestro sitio web.</p>
+    <!-- Menu desplegable -->
+  <nav>
              <button>Menu</button>
             <ul>
                
                 <li><a href="Destinos.html">Destinos</a></li>
                 <li><a href="Agencias.html">Agencias</a></li>
                 <li><a href="Precios.html">Precios</a></li>
+                <li><a href="/Pagina principal/pages/BlogDestinos.html">Lugares mas visitados</a></li>
 
             </ul>
-        </nav>
+        </nav>   
+</header>
+  
+    
+      
 <main>
    
-    <!--Video de lugares mas visitados (Seccion hero)-->
+    <!-- Video de lugares mas visitados (Seccion hero) -->
     <section class="lugares">
         <div><h1>Lugares mas visitados</h1></div>
-        <video src="paisajes.mp4" autoplay loop muted></video>
+        <video src="/Pagina principal/Assets/video/YTDown.com_Shorts_Cerro-de-los-7-colores-Purmamarca_Media_oXQhgATPeMg_002_720p.mp4" autoplay loop muted></video>
+    <div class="overlay">
+        <h1>El Cerro de los Siete Colores es una formación montañosa famosa por sus distintos tonos naturales, originados por sedimentos minerales.</h1>
+    </div>
     </section>
 
-   <!--Destinos destacados-->
-<section class="Destinos">
-    <h1>Lugares preferidos de la gente</h1>
-    <div class="destino">
-        <img src="" alt="">
-        <h2>Salta</h2>
-        <p>Salta es una ciudad ubicada en el noroeste de Argentina, conocida por su arquitectura colonial, su rica historia y su vibrante cultura. La ciudad se encuentra rodeada de impresionantes paisajes naturales, como las montañas de los Andes y los valles fértiles. Salta es famosa por su centro histórico bien conservado, que incluye la Catedral de Salta, la Iglesia de San Francisco y la Plaza 9 de Julio. Además, la ciudad es un punto de partida ideal para explorar la región circundante, que ofrece una variedad de actividades al aire libre, como senderismo, paseos en bicicleta y visitas a pueblos tradicionales.</p>
+  <!--  Destinos destacados -->
+<section class="Cards">
+
+    <h1 class="titulo-destinos">Lugares preferidos de la gente</h1>
+    
+    <div class="card">
+        <img src="/Pagina principal/Assets/images/purmamarca.webp" alt="Purmamarca">
+            <h2>Purmamarca</h2>
+        <p>Purmamarca es un pequeño pueblo ubicado en la provincia de Jujuy, en el noroeste de Argentina. Se encuentra a unos 2.300 metros sobre el nivel del mar</p>
+        <input type="checkbox" id="ver-mas"> 
+        <label for="ver-mas">Ver más</label>
+        <div class="contenido-adicional">
+            <p>Además del Cerro de los Siete Colores, Purmamarca ofrece otras atracciones como la Iglesia de Santa Rosa de Lima, construida en el siglo XVII, y el Paseo de los Colorados, un sendero que permite apreciar formaciones rocosas de colores similares a las del cerro. El pueblo también cuenta con una plaza principal rodeada de casas de adobe y tiendas de artesanías donde se pueden adquirir productos típicos de la región., dentro de la Quebrada de Humahuaca, una región de gran valor histórico y cultural declarada Patrimonio de la Humanidad por la UNESCO en 2003.El principal atractivo de Purmamarca es el Cerro de los Siete Colores, una montaña que presenta distintos tonos (rojo, verde, amarillo, blanco, entre otros) producto de la acumulación de sedimentos durante millones de años. Este cerro se puede observar desde casi cualquier punto del pueblo, convirtiéndose en su símbolo.</p>
     </div>
-    <div class="destino">
-        <img src="" alt="">
-        <h2>Jujuy</h2>
-        <p>Jujuy es una provincia ubicada en el noroeste de Argentina, conocida por su impresionante belleza natural y su rica cultura. La provincia se caracteriza por sus paisajes variados, que incluyen montañas, valles, desiertos y selvas. Jujuy es famosa por sus formaciones geológicas únicas, como la Quebrada de Humahuaca, un valle estrecho con impresionantes formaciones rocosas y pueblos tradicionales. Además, Jujuy es hogar de una vibrante cultura indígena, con tradiciones ancestrales que se reflejan en su música, danza y festividades. La provincia también ofrece una variedad de actividades al aire libre, como senderismo, paseos en bicicleta y visitas a comunidades locales.</p>
     </div>
+
+    <div class="card">
+    
+        <img src="/Pagina principal/Assets/images/las salinas.webp" alt="Las Salinas">
+            <h2>Las Salinas</h2>    
+               <p>Las Salinas son un conjunto de salares ubicados en la provincia de Jujuy, en el noroeste de Argentina. Son conocidas por su paisaje único y su belleza natural. El lugar es famoso por su coloración rojiza y su forma alargada, que se asemeja a un lago. Las Salinas son un destino turístico popular, especialmente durante la temporada de verano, cuando el clima es más agradable.</p>
+    
+        <input type="checkbox" id="ver-mas-salinas">
+        <label for="ver-mas-salinas">Ver más</label>
+        <div class="contenido-adicional">
+            <p> Las salinas se formaron hace millones de años a partir de la evaporación de antiguos lagos que quedaron atrapados en la región. Con el paso del tiempo, el agua se evaporó debido al clima seco, dejando grandes depósitos de sal en la superficie.El paisaje es completamente blanco y plano, con una superficie que en algunas zonas se presenta en forma de bloques o polígonos naturales, creados por la contracción de la sal. Durante la temporada de lluvias, una fina capa de agua cubre el salar, generando un efecto espejo que refleja el cielo, creando vistas únicas.</p>
+        </div>
+
+    </div>
+
+    <div class="card">
+    <img src="/Pagina principal/Assets/images/quebrada-de-humahuaca.webp" alt="Humahuaca">
+        <h2>Quebrada de Humahuaca</h2>
+        <p>La Quebrada de Humahuaca es una región natural y cultural ubicada en la provincia de Jujuy, en el noroeste de Argentina. Es conocida por su paisaje desértico y su valor histórico y cultural, declarada Patrimonio de la Humanidad por la UNESCO en 2003.</p>
+        <input type="checkbox" id="ver-mas-humahuaca">
+        <label for="ver-mas-humahuaca">Ver más</label>
+        <div class="contenido-adicional">
+            <p>Humahuaca es uno de los asentamientos más antiguos del norte argentino. Antes de la llegada de los españoles, la zona estaba habitada por pueblos originarios, especialmente los omaguacas. Durante la época colonial, la ciudad fue un punto clave en las rutas comerciales que conectaban el Alto Perú (actual Bolivia) con el resto del territorio.Además, tuvo un papel importante en las guerras por la independencia argentina, ya que fue escenario de enfrentamientos y paso de ejércitos patriotas.</p>
+        </div>
+    </div>
+
+<div class="card">
+    <img src="/Pagina principal/Assets/images/Termas de reyes.webp"  alt="Termas de reyes">
+    <h2>Termas de Reyes</h2>
+    <p>Las Termas de Reyes son un conjunto de termas naturales ubicadas en la provincia de Jujuy, en el noroeste de Argentina. Son conocidas por su belleza natural y sus propiedades terapéuticas.</p>
+    <input type="checkbox" id="ver-mas-reyes">
+    <label for="ver-mas-reyes">Ver más</label>
+    <div class="contenido-adicional">
+        <p>Las termas se encuentran en un entorno natural protegido, rodeado de paisajes desérticos y formaciones geológicas únicas. La temperatura del agua varía entre 38 y 42 grados Celsius, lo que las hace ideales para el baño termal.</p>
+    </div>
+</div>
+
 </section>
 
     <!--Contador de visitas -->
-    <section class="visitas">
-        <div class="contador">
-            <h1>500</h1>
-            <p>Personas visitaron este lugar</p>
+    <section class="contador">
+        <div class="visitas">
+            <h2 class="numero">200</h2>
+            <p>Turistas visitaron nuestros destinos</p>
         </div>
+        <div class="visitas">
+            <h2 class="numero">120</h2>
+            <p>Recomendaciones de tabibitos</p>
+        </div>  
+        <div class="visitas">
+            <h2 class="numero">10</h2>
+            <p>Experiencis compartidas</p>
+        </div>
+      
     </section>
   
     <!--Testimonios -->
     <section class="testimonios">
+   
+    
+        <input type="radio" name="testimonio"  id="t1" class="punto" checked>
+        <input type="radio" name="testimonio"  id="t2" class="punto">
+        <input type="radio" name="testimonio"  id="t3" class="punto">
+  
+        
+    <div class="carrusel">
         <div class="testimonio">
-            <img src="/Pagina principal/Assets/Video/marca-agua-jujuy-al-momento-1-64png.webp" alt="">
+            
             <h2>Juan Perez</h2>
+            <h3>Lugar al que viajo: Termas de reyes</h3>
             <p>Me encantó este lugar, es increíblemente hermoso y la gente es muy amable pero el camino es largo qliao.</p>
+            <img src="/Pagina principal/Assets/images/Termas de reyes.webp" alt="Termas de Reyes">
         </div>
+        
         <div class="testimonio">
             <h2>Maria Gomez</h2>
+            <h3>Lugar al que viajo: Cerro de 7 colores</h3>
             <p>Una experiencia inolvidable, definitivamente volveré a visitar este lugar.</p>     
-            <img src="" alt="">
+            <img src="/Pagina principal/Assets/images/cerro-de-los-siete-colores.webp" alt="Cerro de los Siete Colores">
         </div>
-    </section>
+        
+        <div class="testimonio">
+            
+            <h2>Carlos Rodriguez</h2>
+            <h3>Lugar al que viajo: Las Salinas</h3>
+            <p>Las vistas son impresionantes, especialmente al atardecer. Recomiendo visitar</p>
+            <img src="/Pagina principal/Assets/images/las salinas.webp" alt="las salinas">
+        
+        </div>
+    </div>
+    
+</section>
+
 </main>
 
-<Footer>
-    <p><li><a href="Suscribete">Suscribete</a></li></p>
-    <p><li><a href="Contacto de unju">Contacto</a></li></p>
-    <p><li><a href="Donde ubicarnos">Donde ubicarnos</a></li></p>
-    
-</Footer>
-    </header>
+<!-- Pie de pagina -->
+<footer>
+    <ul>
+     
+        <li><a href="/Pagina principal/pages/Contacto.html">Contacto</a></li>
+        <li><a href="https://maps.app.goo.gl/j1ZGdCBHEbtTEC1y9">Donde ubicarnos</a></li>
+    </ul>
+
+    <form id="newsletter">
+        <input type="email" placeholder="Ingresa tu correo" required>
+        <button type="submit">Suscribirse</button>
+    </form>
+</footer>
+</body>

@@ -1,0 +1,273 @@
+header  {
+    text-align: center;
+    color: #333;
+    text-shadow: #333 1px 1px 2px;
+}
+
+body{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #61863f;
+
+}
+/* Menu */
+button{
+    border-radius: 30px;
+    background-color: #61863f;
+    color: white;
+    cursor: pointer;
+}
+
+nav {
+    background-color: #61863f;
+    padding: 1px;
+    position: relative;
+    box-sizing: border-box;
+    max-width: 55px ;
+    padding-bottom: 90px;
+}
+
+nav ul {
+   box-shadow: #0b0c0a 0px 20px 25px;
+  position: absolute;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: none;
+    transition: all 0.3s ease;
+    min-width: 150px;
+    border-radius: 10px;
+}
+
+nav ul li {
+    margin: 10px 0;
+    content: "-";
+    
+    
+}
+
+nav:hover ul {
+    display: block;
+}
+
+/*  Estilos para la sección de lugares (Hero)*/
+
+section.lugares {
+    position: relative;
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    width: 100% ;
+    height: 300px;
+    object-fit: cover;
+
+}
+
+.overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 80%;
+    animation: aparecer 4s forwards;
+}
+ 
+@keyframes aparecer{
+    from {
+        opacity: 0;
+        transform: rotateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(30);
+    }
+} 
+
+video {
+    width: 100%;
+    height:90%;
+    object-fit: cover;
+    margin-top: -20px;
+}
+
+/*Estilos para la sección de destinos destacados (card) */
+
+.titulo-destinos{
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    grid-column: 1/-1;
+}
+
+.destino {
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.destino p {
+ font-size:21px;
+    padding: 60px;
+}
+.contenido-adicional {
+    display: none;
+   
+}
+#ver-mas:checked ~ .contenido-adicional {
+    display: block;
+}
+#ver-mas-salinas:checked ~ .contenido-adicional {
+    display: block;
+}
+#ver-mas-reyes:checked ~ .contenido-adicional {
+    display: block;
+}
+#ver-mas-humahuaca:checked ~ .contenido-adicional {
+    display: block;
+}
+
+.Cards {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+
+.card {
+    transition: transform 0.3s ease;
+    background-color: rgb(58, 124, 68);
+    bborder-radius: 10px;
+    padding: 15px;
+    overflow: hidden;
+    box-shadow: #0b0c0a 0px 5px 5px;
+}
+/* Textos de las cards */
+.card h2 {
+    font-size: 24px;
+    margin: 10px 0;
+}
+.card p {
+    font-size: 16px;
+    color: #000000;
+    padding: 0 10px 10px;
+}
+/* Efectos de la cards */
+.card:hover {
+   transform: translateY(-10px) ;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+    position: static;
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+/* Contador */
+.contador {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 40px 20px;
+   
+}
+
+.visitas {
+    text-align: center;
+
+}
+
+.numero {
+    font-size: 40px;
+    font-weight: bold;
+    animation: contar 2s ease-out;
+}
+
+@keyframes contar {
+    from {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+/* Testimonios */
+.testimonio {
+   display: none;
+    font-size: 20px;
+      border-radius: 15px;
+      padding: 30px;
+      text-align: center;
+      max-width: 500px;
+      margin: 0 auto;
+}
+#t1:checked ~ .carrusel .testimonio:nth-child(1){
+    display: block;
+}
+#t2:checked ~ .carrusel .testimonio:nth-child(2){
+    display: block;
+}
+#t3:checked ~ .carrusel .testimonio:nth-child(3){
+    display: block;
+}
+.testimonio img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    object-fit: cover;
+}
+.testimonio h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+.testimonio p {
+    font-size: italic;
+    color: #0a0808;
+    line-height: 1.5;
+}
+.punto {
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+    accent-color: white;
+    margin: 10px 5px;
+}
+
+.testimonios {
+    text-align: center;
+}
+
+/* Footer */
+footer {
+    background-color: #222;
+    padding: 15px;
+    text-align: center;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+footer li {
+    display: inline;
+    margin: 0 15px;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
